@@ -47,7 +47,7 @@ while True:
             if all(finger_fold_status):
                 
                 # ESCREVA O CÓDIGO AQUI  
-                image = pyautogui.screenshoot()
+                image = pyautogui.screenshot()
                 image = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
                 cv2.imwrite("In_memory_to_disk.png", image)
 
